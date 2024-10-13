@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIMOVER</title>
+    <link rel="stylesheet" href="homepage.css">
+    
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="top-bar">
+            <div class="top-bar-section">
+                <div class="logo">
+                    <a href="index.html"><img src="./resources/logo-header.webp" alt="Logo" /></a>
+                </div>
+                <div class="contacts">
+                    <div class="contact-item">
+                        <a href="tel:+1234567890" class="phone-icon">
+                            <img src="./resources/phone.png" alt="Phone">
+                        </a>
+                        <span class="tooltip" id="phone">09174601039 09209040265</span> <!-- Tooltip for phone number -->
+                    </div>
+                    <div class="contact-item">
+                        <a href="mailto:info@company.com">
+                            <img src="./resources/email.png" alt="Email">
+                        </a>
+                        <span class="tooltip" id="email">info@company.com recruitment@info.com.ph</span> <!-- Tooltip for email -->
+                    </div>
+                    <div class="separator"></div>
+                    <div class="socmed">
+                        <a href="https://facebook.com">
+                            <img src="./resources/facebook.png" alt="Facebook">
+                        </a>
+                    </div>
+                    <div class="socmed">
+                        <a href="https://instagram.com">
+                            <img src="./resources/instagram.png" alt="Instagram">
+                        </a>
+                    </div>
+                    <div class="socmed">
+                        <a href="https://linkedin.com">
+                            <img src="./resources/linkedin.png" alt="LinkedIn">
+                        </a>
+                    </div>
+                </div>
+                
+                
+                
+            </div>
+            <nav class="nav-container">
+                <ul class="nav-menu">
+                    <li><a href="#about">ABOUT US</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#partners">PARTNERS</a></li>
+                    <li><a href="#careers">CAREERS</a></li>
+                    <li><a href="#contact">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>LOREM CONSULTANCY SERVICES, INC</h1>
+                <p class="poppins-extralight">Lorem ipsum dolor sit</p>
+            </div>
+            <div class="hero-carousel">
+                <div class="hero-image">
+                    <img src="./resources/img-banner-1.webp" alt="Banner Image">
+                </div>
+                <div class="hero-image">
+                    <img src="./resources/img-banner-2.webp" alt="Banner Image">
+                </div>
+                <div class="hero-image">
+                    <img src="./resources/img-banner-3.webp" alt="Banner Image">
+                </div>
+            </div>
+        </div>
+
+        <section class="keyfeat">
+            <div class="card-container">
+                <!-- Card Data as an Array -->
+                <div id="card-satisfaction" class="card" data-title="Client Satisfaction" data-desc="We strive to exceed client expectations through outstanding service." data-img="./resources/icon-satisfaction.webp"></div>
+                <div id="card-dynamic" class="card" data-title="Dynamic" data-desc="Our approach is adaptable and flexible to meet changing needs." data-img="./resources/icon-dynamic.webp"></div>
+                <div id="card-quality" class="card" data-title="Quality" data-desc="We recruit and deploy carefully screened and selected applicants at minimum cost." data-img="./resources/icon-quality.webp"></div>
+                <div id="card-proactive" class="card" data-title="Proactive" data-desc="We anticipate challenges and prepare solutions ahead of time." data-img="./resources/icon-proactive.webp"></div>
+                <div id="card-partnership" class="card" data-title="Partnership" data-desc="Building long-lasting partnerships is at the core of our mission." data-img="./resources/icon-partnership.webp"></div>
+            </div>
+        </section>
+        
+    </section>
+    
+    <script src="script.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Slick JS -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.hero-carousel').slick({
+                autoplay: true,
+                autoplaySpeed: 3000,
+                dots: true,
+                infinite: true,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear'
+            });
+        });
+    </script>
+
+    
+    
+</body>
+
+</html>
